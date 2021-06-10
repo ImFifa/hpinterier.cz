@@ -28,7 +28,7 @@ services:
       VIRTUAL_HOST: db.hpinterier2cz.localhost
 
   php:
-    image: updated-php74-apache
+    image: php8apache
     networks:
       - nginx_proxy_network
     expose:

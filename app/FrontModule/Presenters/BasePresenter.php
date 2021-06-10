@@ -26,8 +26,8 @@ abstract class BasePresenter extends FrontBasePresenter
 		$mob = $vars['mobile'];
 		$email = $vars['email'];
 		$address = $vars['address'];
-		$this->template->tel = $tel;
-		$this->template->mob = $mob;
+		$this->template->phone = $tel;
+		$this->template->mobile = $mob;
 		$this->template->email = $email;
 		$this->template->address = $address;
 	}
