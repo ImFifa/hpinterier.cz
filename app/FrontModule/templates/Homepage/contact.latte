@@ -1,0 +1,47 @@
+{block #content}
+	<section class="contact-page page-section">
+		<div class="container">
+			<h1 n:block="title">Kontakt</h1>
+
+			<ul class="contact-links">
+				<li n:if="$tel || $mob">
+					<a n:if="$tel" href="tel:{$tel}">{$tel}</a>
+					{if $mob}<br><a href="tel:{$mob}">{$mob}</a>{/if}
+				</li>
+				<li n:if="$email"><a href="mailto:{$email}">{$email}</a></li>
+				<li n:if="$facebook"><a href="{$facebook}">HP interier</a></li>
+				<li n:if="$address">{$address}</li>
+			</ul>
+		</div>
+	</section>
+	<section class="contact-form">
+		{form contactForm, class => 'contactForm row'}
+			<div class="col-lg-12">
+				<div class="form-group">
+					{label name}{/label}
+					{input name class => 'form-control'}
+				</div>
+			</div>
+
+			<div class="col-lg-12">
+				<div class="form-group">
+					{label email}{/label}
+					{input email class => 'form-control'}
+				</div>
+			</div>
+
+			<div class="col-lg-12">
+				<div class="form-group">
+					{label message}{/label}
+					{input message class => 'form-control'}
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<div class="form-group">
+					{input submit class => 'btn btn-primary'}
+				</div>
+			</div>
+		{/form}
+	</section>
+{/block}

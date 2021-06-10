@@ -33,6 +33,7 @@ $grays: map-merge(
 		$grays
 );
 
+$brown: #79612d !default;
 $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
@@ -64,14 +65,15 @@ $colors: map-merge(
 		$colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #202479 !default;
+$secondary:     #4B50C1 !default;
+$light-blue:	#9B9FE3 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$light:         #F2F2F2 !default;
+$dark:          #2F2F2F !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
@@ -933,7 +935,7 @@ $badge-focus-width:                 $input-btn-focus-width !default;
 
 $badge-pill-padding-x:              .6em !default;
 // Use a higher than normal value to ensure completely rounded edges when
-// customizing padding or font-size on labels.
+// customizing padding or fonts-size on labels.
 $badge-pill-border-radius:          10rem !default;
 
 
