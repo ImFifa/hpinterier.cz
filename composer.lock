@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "66d7689a7901e3bda8c2018cbbbb490a",
+    "content-hash": "883c48bb4ed71078e1feebc2baaa7de8",
     "packages": [
         {
             "name": "brick/date-time",
@@ -2454,60 +2454,6 @@
             "time": "2021-06-09T21:32:59+00:00"
         },
         {
-            "name": "simple-cms/file-module",
-            "version": "v2.x-dev",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:K2D-CZ/file.git",
-                "reference": "886007e6dc53549bf5378e690f54782f7407b371"
-            },
-            "require": {
-                "php": ">= 7.4"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src"
-                ]
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "SimpleCMS - File Module",
-            "keywords": [
-                "cms",
-                "nette"
-            ],
-            "time": "2021-02-24T15:23:23+00:00"
-        },
-        {
-            "name": "simple-cms/gallery-module",
-            "version": "v2.x-dev",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:K2D-CZ/gallery.git",
-                "reference": "d0676382845ed0ae75e7845736a71fa96bd8bb7d"
-            },
-            "require": {
-                "php": ">= 7.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "K2D\\Gallery\\": "src"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "SimpleCMS - Gallery Module",
-            "keywords": [
-                "cms",
-                "nette"
-            ],
-            "time": "2021-03-01T02:40:37+00:00"
-        },
-        {
             "name": "symfony/console",
             "version": "v5.3.0",
             "source": {
@@ -4140,9 +4086,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "simple-cms/box-module": 20,
-        "simple-cms/core-module": 20,
-        "simple-cms/file-module": 20,
-        "simple-cms/gallery-module": 20
+        "simple-cms/core-module": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
