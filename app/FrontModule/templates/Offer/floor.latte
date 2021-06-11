@@ -1,19 +1,21 @@
 {block #content}
-	<header class="header-links">
-		<a href="#">
-			<h3>Laminátové podlahy MISTER</h3>
-			<img src="#" alt="#">
-		</a>
-	</header>
-	<section class="louver-page page-section">
-		<div class="container">
-			<h1 n:block="title">Podlahy</h1>
-			<p>{box floor}</p>
-		</div>
-	</section>
-	<section class="action-links">
-		<div class="realization">
-			<a href="#" class="btn btn-primary">Realizace <i class="fas fa-arrow-right"></i></a>
-		</div>
-	</section>
+	<div class="container">
+		<section class="header-links">
+			<a href="#">
+				<h3>Laminátové podlahy MISTER</h3>
+				<img src="{$basePath}/dist/img/floor.jpeg" class="img-fluid" alt="Laminátové podlahy MISTER">
+			</a>
+		</section>
+		<section class="louver-page page-section">
+			<div class="container">
+				<h1 n:block="title">Podlahy</h1>
+				<p>{box floor}</p>
+			</div>
+		</section>
+		<section class="action-links">
+			<div class="realization">
+				<a href="#" class="btn btn-primary">Realizace <i class="fas fa-arrow-right"></i></a>
+			</div>
+		</section>
+	</div>
 {/block}

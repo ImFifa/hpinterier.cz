@@ -28,6 +28,7 @@
 		"ext-libxml": "*",
 		"ext-simplexml": "*",
 		"ext-xmlwriter": "*",
+		"contributte/recaptcha": "^3.4",
 		"nette/nette": "^3.0.0",
 		"orisai/nette-di": "^1.0.0",
 		"simple-cms/box-module": "v2.x-dev",

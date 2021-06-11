@@ -4,44 +4,52 @@
 			<h1 n:block="title">Kontakt</h1>
 
 			<ul class="contact-links">
-				<li n:if="$tel || $mob">
-					<a n:if="$tel" href="tel:{$tel}">{$tel}</a>
-					{if $mob}<br><a href="tel:{$mob}">{$mob}</a>{/if}
+				<li n:if="$phone || $mobile">
+					<a n:if="$phone" href="tel:{$phone}"><i class="fas fa-phone-alt"></i> {$phone}</a>
+					{if $mobile}<br><a href="tel:{$mobile}"><i class="fas fa-phone-alt"></i> {$mobile}</a>{/if}
 				</li>
-				<li n:if="$email"><a href="mailto:{$email}">{$email}</a></li>
-				<li n:if="$facebook"><a href="{$facebook}">HP interier</a></li>
-				<li n:if="$address">{$address}</li>
+				<li n:if="$email"><a href="mailto:{$email}"><i class="fas fa-envelope"></i> {$email}</a></li>
+				<li n:if="$address"><i class="fas fa-map-pin"></i> {$address}</li>
 			</ul>
+
+			<section class="contact-form">
+				{form contactForm, class => 'contactForm row'}
+					<h4>Ozvěte se nám!</h4>
+					<div class="col-lg-12">
+						<div class="form-group">
+							{label name}{/label}
+					{input name class => 'form-control'}
+						</div>
+					</div>
+
+					<div class="col-lg-12">
+						<div class="form-group">
+							{label email}{/label}
+					{input email class => 'form-control'}
+						</div>
+					</div>
+
+					<div class="col-lg-12">
+						<div class="form-group">
+							{label message}{/label}
+					{input message class => 'form-control', rows => '6'}
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="form-group">
+							{input submit class => 'btn btn-lg btn-primary'}
+						</div>
+					</div>
+				{/form}
+
+				<iframe title="Kde nás najdete" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2547.2074454388708!2d13.541097380330603!3d50.32538090435021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470a3d92aef0a5a7%3A0x4b83e5d0077de14b!2sMasarykova%20946%2C%20438%2001%20%C5%BDatec!5e0!3m2!1scs!2scz!4v1623375708322!5m2!1scs!2scz" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</section>
 		</div>
 	</section>
-	<section class="contact-form">
-		{form contactForm, class => 'contactForm row'}
-			<div class="col-lg-12">
-				<div class="form-group">
-					{label name}{/label}
-					{input name class => 'form-control'}
-				</div>
-			</div>
+{/block}
 
-			<div class="col-lg-12">
-				<div class="form-group">
-					{label email}{/label}
-					{input email class => 'form-control'}
-				</div>
-			</div>
-
-			<div class="col-lg-12">
-				<div class="form-group">
-					{label message}{/label}
-					{input message class => 'form-control'}
-				</div>
-			</div>
-
-			<div class="col-lg-6">
-				<div class="form-group">
-					{input submit class => 'btn btn-primary'}
-				</div>
-			</div>
-		{/form}
-	</section>
+{block #scripts}
+	<script src="https://www.google.com/recaptcha/api.js?render=explicit"></script>
+	<script src="{$basePath}/scripts/invisibleRecaptcha.js"></script>
 {/block}

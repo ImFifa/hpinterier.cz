@@ -37,7 +37,7 @@ class HomepagePresenter extends BasePresenter
 		$form->addInvisibleReCaptcha('recaptcha')
 			->setMessage('Jste opravdu člověk?');
 
-		$form->addSubmit('submit', 'Odeslat přihlášku');
+		$form->addSubmit('submit', 'Odeslat');
 
 		$form->onSubmit[] = function (Form $form) {
 			try {

@@ -32,6 +32,16 @@ Nette.initOnLoad();
 window.Nette = Nette;
 
 document.addEventListener("DOMContentLoaded", () => {
+
+	// lazy-load google map
+	const $googleMap = $("#google-map");
+	let mapInitialized = false;
+
+	if (!mapInitialized) {
+		$googleMap.attr("src", $googleMap.data("src"));
+		mapInitialized = true;
+	}
+
 	//gdpr
 	$(".gdpr button").click(function() {
 		var date = new Date();

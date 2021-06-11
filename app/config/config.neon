@@ -10,6 +10,9 @@ application:
 services:
 	router: App\RouterFactory::createRouter()
 
+extensions:
+    recaptcha: Contributte\ReCaptcha\DI\ReCaptchaExtension
+
 parameters:
 	customTemplatesDir: %appDir%/FrontModule/templates/
 
