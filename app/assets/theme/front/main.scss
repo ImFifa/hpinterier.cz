@@ -445,6 +445,7 @@ footer {
 
 // gdpr
 .gdpr {
+	font-size: 0.9rem;
 	width: calc(100% - 2rem);
 	max-width: 450px;
 	position: fixed;
@@ -454,7 +455,7 @@ footer {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
-	padding: 1.5rem;
+	padding: 1rem;
 	color: $gray-800;
 	background-color: $white;
 	z-index: 1000;
