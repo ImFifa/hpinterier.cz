@@ -19,7 +19,6 @@
 /app/config/google_service_account.json
 /.env
 
-/.data/*
 .data
 .docker
 docker-compose.yml
