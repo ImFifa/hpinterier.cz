@@ -9,6 +9,7 @@ application:
 
 services:
 	router: App\RouterFactory::createRouter()
+	repository: App\Service\ProjectModelRepository
 
 extensions:
     recaptcha: Contributte\ReCaptcha\DI\ReCaptchaExtension

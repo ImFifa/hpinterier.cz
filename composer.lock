@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "883c48bb4ed71078e1feebc2baaa7de8",
+    "content-hash": "7ab64d8623a08f6f783b1497a200dff8",
     "packages": [
         {
             "name": "brick/date-time",
@@ -2456,6 +2456,33 @@
             "time": "2021-07-23T14:50:49+00:00"
         },
         {
+            "name": "simple-cms/gallery-module",
+            "version": "v2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:K2D-CZ/gallery.git",
+                "reference": "fedef66707b1358d2e5a776a709b2b0158db9dbf"
+            },
+            "require": {
+                "php": ">= 7.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "K2D\\Gallery\\": "src"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "SimpleCMS - Gallery Module",
+            "keywords": [
+                "cms",
+                "nette"
+            ],
+            "time": "2021-07-06T21:53:05+00:00"
+        },
+        {
             "name": "symfony/console",
             "version": "v5.3.6",
             "source": {
@@ -4087,7 +4114,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "simple-cms/box-module": 20,
-        "simple-cms/core-module": 20
+        "simple-cms/core-module": 20,
+        "simple-cms/gallery-module": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
