@@ -11,6 +11,10 @@
 		{
 			"type": "git",
 			"url": "git@github.com:K2D-CZ/box.git"
+		},
+		{
+			"type": "git",
+			"url": "git@github.com:K2D-CZ/gallery.git"
 		}
 	],
 	"require": {
@@ -25,6 +29,7 @@
 		"orisai/nette-di": "^1.0.0",
 		"simple-cms/box-module": "v2.x-dev",
 		"simple-cms/core-module": "v2.x-dev",
+		"simple-cms/gallery-module": "v2.x-dev",
 		"symfony/dotenv": "^5.1",
 		"tracy/tracy": "^2.7.6"
 	},

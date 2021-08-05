@@ -20,13 +20,13 @@ class RouterFactory
 		$router->withModule('Front')->addRoute('[<lang=cs (cs)>/]', 'Homepage:default');
 		$router->withModule('Front')->addRoute('[<lang=cs (cs)>/]kontakt', 'Homepage:contact');
 
-		$router->withModule('Front')->addRoute('[<lang=cs (cs)>/]aktuality', 'News:default');
-		$router->withModule('Front')->addRoute('[<lang=cs (cs)>/]aktualita/<slug>', 'News:show');
-
 		$router->withModule('Front')->addRoute('[<lang=cs (cs)>/]nabizime', 'Offer:default');
 		$router->withModule('Front')->addRoute('[<lang=cs (cs)>/]nabizime/kancelarsky-nabytek-a-zidle', 'Offer:office');
 		$router->withModule('Front')->addRoute('[<lang=cs (cs)>/]nabizime/prodej-a-pokladka-podlah', 'Offer:floor');
 		$router->withModule('Front')->addRoute('[<lang=cs (cs)>/]nabizime/prodej-a-montaz-stinici-techniky', 'Offer:louver');
+
+		$router->withModule('Front')->addRoute('[<lang=cs (cs)>/]realizace', 'Realization:default');
+		$router->withModule('Front')->addRoute('[<lang=cs (cs)>/]realizace/<slug>', 'Realization:show');
 
 		$router->withModule('Front')->addRoute('[<lang=cs [a-z]{2}>/]<presenter>/<action>', 'Error:404');
 		return $router;
