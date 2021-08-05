@@ -12,7 +12,7 @@ services:
       - nginx_proxy_network
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: hpinterier2cz
+      MYSQL_DATABASE: hpinteriercz
     volumes:
       - .data/mysql:/var/lib/mysql
 
@@ -25,7 +25,7 @@ services:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_USER: root
       MYSQL_PASSWORD: root
-      VIRTUAL_HOST: db.hpinterier2cz.localhost
+      VIRTUAL_HOST: db.hpinteriercz.localhost
 
   php:
     image: php8apache
@@ -38,7 +38,7 @@ services:
       - ./.docker/apache/000-default.conf:/etc/apache2/sites-enabled/000-default.conf
     environment:
       NETTE_DEBUG_SECRET: debug
-      VIRTUAL_HOST: hpinterier2cz.localhost
+      VIRTUAL_HOST: hpinteriercz.localhost
       VIRTUAL_PORT: 80
-      LETSENCRYPT_HOST: hpinterier2cz.localhost
+      LETSENCRYPT_HOST: hpinteriercz.localhost
       LETSENCRYPT_EMAIL: info@filipurban.cz
