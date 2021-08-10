@@ -5,6 +5,48 @@
 				<h1 n:block="title">Realizace</h1>
 				<p>{box realization}</p>
 
+				<div n:ifset="$gallery1" class="gal">
+					<h2>Kancelářský nábytek a židle</h2>
+
+					<div class="img-row">
+						{foreach $gallery1 as $image1}
+							<a n:if="$iterator->counter < 4"  href="{$basePath}/upload/galleries/{$image1->gallery_id}/{$image1->name}" data-lightbox="gallery" data-name="{$image1->title}">
+								<img class="img-fluid" src="{$basePath}/upload/galleries/{$image1->gallery_id}/thumbs/{$image1->name}" alt="{$image1->title}">
+							</a>
+						{/foreach}
+					</div>
+
+					<a n:href="Realization:show kancelarsky-nabytek-a-zidle" class="btn btn-primary">Zobrazit všechny realizace kancelářského nábytku a židlí <i class="fas fa-arrow-right"></i></a>
+				</div>
+
+				<div n:ifset="$gallery2" class="gal">
+					<h2>Podlahy</h2>
+
+					<div class="img-row">
+						{foreach $gallery2 as $image2}
+							<a n:if="$iterator->counter < 4" href="{$basePath}/upload/galleries/{$image2->gallery_id}/{$image2->name}" data-lightbox="gallery" data-name="{$image2->title}">
+								<img class="img-fluid" src="{$basePath}/upload/galleries/{$image2->gallery_id}/thumbs/{$image2->name}" alt="{$image2->title}">
+							</a>
+						{/foreach}
+					</div>
+
+					<a n:href="Realization:show podlahy" class="btn btn-primary">Zobrazit všechny realizace podlah <i class="fas fa-arrow-right"></i></a>
+				</div>
+
+				<div n:ifset="$gallery3" class="gal">
+					<h2>Stínící technika</h2>
+
+					<div class="img-row">
+						{foreach $gallery3 as $image3}
+							<a n:if="$iterator->counter < 4" href="{$basePath}/upload/galleries/{$image3->gallery_id}/{$image3->name}" data-lightbox="gallery" data-name="{$image3->title}">
+								<img class="img-fluid" src="{$basePath}/upload/galleries/{$image3->gallery_id}/thumbs/{$image3->name}" alt="{$image3->title}">
+							</a>
+						{/foreach}
+					</div>
+
+					<a n:href="Realization:show stinici-technika" class="btn btn-primary">Zobrazit všechny realizace stínící techniky <i class="fas fa-arrow-right"></i></a>
+				</div>
+
 				<!-- todo vypsat kategorie galerii -->
 			</div>
 		</section>

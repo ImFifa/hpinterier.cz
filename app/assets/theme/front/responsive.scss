@@ -51,6 +51,16 @@
 	}
 }
 @include media-breakpoint-up(lg) {
+	.gal {
+		padding: 2rem;
+
+		.img-row {
+			img {
+				height: 250px;
+			}
+		}
+	}
+
 	h1 {
 		font-size: 2.5rem;
 	}
