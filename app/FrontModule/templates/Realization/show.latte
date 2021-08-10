@@ -2,8 +2,24 @@
 	<div class="container">
 		<section class="realization-page page-section">
 			<div class="container">
-				<h1 n:block="title">Detail realizace</h1>
-				<p>{$gallery->name}</p>
+				<h1 n:block="title">{$gallery->name} - realizace</h1>
+
+				<div class="row no-gutters galerie">
+				{ifset $images}
+					{foreach $images as $image}
+						<div class="img-block col-md-6 col-lg-4 col-xl-3">
+							<a href="{$basePath}/upload/galleries/{$image->gallery_id}/{$image->name}" data-lightbox="gallery" data-name="{$image->title}">
+								<img src="{$basePath}/upload/galleries/{$image->gallery_id}/thumbs/{$image->name}" alt="{$image->title}">
+							</a>
+							<div n:if="$image->title || $image->description || $image->url" class="img-desc">
+								<h5 n:if="$image->title">{$image->title}</h5>
+								<i n:if="$image->description">{$image->description}</i>
+								<a n:if="$image->url" class="btn btn-secondary" target="_blank" href="{$image->url}">Odkaz</a>
+							</div>
+						</div>
+					{/foreach}
+				{/ifset}
+				</div>
 			</div>
 		</section>
 	</div>

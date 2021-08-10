@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ab64d8623a08f6f783b1497a200dff8",
+    "content-hash": "f0b1a6ae8cd787ac4a261baf4f942589",
     "packages": [
         {
             "name": "brick/date-time",
@@ -2393,15 +2393,25 @@
         },
         {
             "name": "simple-cms/box-module",
-            "version": "v2.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "git@github.com:K2D-CZ/box.git",
-                "reference": "09c776e6a25c4f2dec1e420cdab356597db4c9a2"
+                "reference": "95483830c1b3ee049f8c6832348495037fe81d88"
             },
             "require": {
-                "php": ">= 7.4"
+                "php": ">= 7.4",
+                "simple-cms/core-module": "dev-master"
             },
+            "require-dev": {
+                "orisai/coding-standard": "^2.2.0",
+                "phpstan/phpstan": "^0.12.94",
+                "phpstan/phpstan-deprecation-rules": "^0.12.6",
+                "phpstan/phpstan-nette": "^0.12.21",
+                "phpstan/phpstan-strict-rules": "^0.12.10",
+                "staabm/annotate-pull-request-from-checkstyle": "^1.6.0"
+            },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -2416,15 +2426,15 @@
                 "cms",
                 "nette"
             ],
-            "time": "2021-03-23T02:49:06+00:00"
+            "time": "2021-08-05T11:21:30+00:00"
         },
         {
             "name": "simple-cms/core-module",
-            "version": "v2.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "git@github.com:K2D-CZ/core.git",
-                "reference": "399faa5b072c6c532be3e74f1cbb1c54f20f94e2"
+                "reference": "1a5471b601fb9c31447b6eff04fcfcd7d824041d"
             },
             "require": {
                 "contributte/console": "^0.8.0|^0.9.0",
@@ -2433,12 +2443,22 @@
                 "nette/security": "^3.0.0",
                 "nette/utils": "^3.0.0",
                 "nextras/migrations": "^3.1.2",
-                "nextras/orm": "^4.0",
+                "nextras/orm": "^4.0.3",
                 "orisai/auth": "^1.0.0",
+                "orisai/exceptions": "^1.1.0",
                 "php": ">= 7.4",
                 "tracy/tracy": "^2.7.0",
                 "uestla/twigrid": "^12.0.0"
             },
+            "require-dev": {
+                "orisai/coding-standard": "^2.2.0",
+                "phpstan/phpstan": "^0.12.94",
+                "phpstan/phpstan-deprecation-rules": "^0.12.6",
+                "phpstan/phpstan-nette": "^0.12.21",
+                "phpstan/phpstan-strict-rules": "^0.12.10",
+                "staabm/annotate-pull-request-from-checkstyle": "^1.6.0"
+            },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -2453,19 +2473,29 @@
                 "cms",
                 "nette"
             ],
-            "time": "2021-07-23T14:50:49+00:00"
+            "time": "2021-08-05T17:56:12+00:00"
         },
         {
             "name": "simple-cms/gallery-module",
-            "version": "v2.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "git@github.com:K2D-CZ/gallery.git",
-                "reference": "fedef66707b1358d2e5a776a709b2b0158db9dbf"
+                "reference": "0aca37d47ba60f6b723b4d308083ede99d02cf46"
             },
             "require": {
-                "php": ">= 7.4"
+                "php": ">= 7.4",
+                "simple-cms/core-module": "dev-master"
             },
+            "require-dev": {
+                "orisai/coding-standard": "^2.2.0",
+                "phpstan/phpstan": "^0.12.94",
+                "phpstan/phpstan-deprecation-rules": "^0.12.6",
+                "phpstan/phpstan-nette": "^0.12.21",
+                "phpstan/phpstan-strict-rules": "^0.12.10",
+                "staabm/annotate-pull-request-from-checkstyle": "^1.6.0"
+            },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -2480,7 +2510,7 @@
                 "cms",
                 "nette"
             ],
-            "time": "2021-07-06T21:53:05+00:00"
+            "time": "2021-08-05T11:24:40+00:00"
         },
         {
             "name": "symfony/console",

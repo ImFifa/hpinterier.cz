@@ -16,9 +16,9 @@ use Nette\Database\Table\ActiveRow;
 
 class ProjectModelRepository extends ModelRepository
 {
-	public function getGalleryBySlug(string $slug): ActiveRow
+	public function getGalleryById(int $id): ActiveRow
 	{
-		return $this->gallery->getTable()->where("slug", $slug)->fetch();
+		return $this->gallery->getTable()->where("id", $id)->fetch();
 	}
 
 	public function getImagesByGallery(int $id): array
